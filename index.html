@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- Navigation Bar -->
+<nav class="navbar">
+    <div class="logo">TravelWorld</div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Enter a destination">
+        <button onclick="searchDestination()">Search</button>
+        <button onclick="clearSearch()">Clear</button>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>EXPLORE YOUR DREAM DESTINATIONS</h1>
+
+        <p>
+            Discover beautiful beaches, ancient temples and
+            amazing countries around the world. Find your next
+            adventure with TravelWorld.
+        </p>
+
+        <button onclick="searchDestination()">Explore Now</button>
+    </div>
+</section>
+
+<!-- Search Results -->
+<section id="results" class="results"></section>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
